@@ -1,5 +1,13 @@
 <script setup>
+import { ref } from 'vue';
 import HelloWorld from './components/HelloWorld.vue'
+
+let msg = ref('Vite + Vue')
+
+setTimeout(() => {
+  msg.value = 'test vue-directives'
+}, 1000);
+
 </script>
 
 <template>
@@ -11,7 +19,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld :msg=msg />
 </template>
 
 <style scoped>

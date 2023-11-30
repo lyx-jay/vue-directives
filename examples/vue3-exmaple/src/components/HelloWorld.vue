@@ -1,15 +1,19 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 import vConsole from '../../../../packages/directives/v-console/v3';
-defineProps({
+const props = defineProps({
   msg: String,
 })
 
+
+
+
 const count = ref(0)
+
 </script>
 
 <template>
-  <h1 v-console>{{ msg }}</h1>
+  <h1 v-console="msg">{{ msg }}</h1>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
