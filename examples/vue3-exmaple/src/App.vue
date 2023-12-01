@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import HelloWorld from './components/HelloWorld.vue'
 
-let msg = ref('Vite + Vue')
+let msg = ref('hello')
 
 setTimeout(() => {
   msg.value = 'test vue-directives'

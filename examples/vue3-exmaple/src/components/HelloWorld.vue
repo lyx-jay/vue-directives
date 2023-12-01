@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import vConsole from '../../../../packages/directives/v-console/v3';
 const props = defineProps({
-  msg: String,
+  msg: String
 })
 
 
